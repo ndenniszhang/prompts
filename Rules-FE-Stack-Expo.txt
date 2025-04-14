@@ -1,22 +1,27 @@
+# General Code Style & Formatting
 - Use functional and declarative programming patterns; avoid classes.
 - Prefer iteration and modularization over code duplication.
 - Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError).
 - Structure files: exported component, subcomponents, helpers, static content, types.
 - Follow Expo's official documentation for setting up and configuring projects.
 
+# Naming Conventions
 - Use lowercase with dashes for directories (e.g., components/auth-wizard).
 - Favor named exports for components.
 
+# TypeScript Best Practices
 - Use TypeScript for all code; prefer interfaces over types.
 - Avoid any and enums; use explicit types and maps instead.
 - Use functional components with TypeScript interfaces.
 - Enable strict mode in TypeScript for better type safety.
 
+# Syntax & Formatting
 - Use the function keyword for pure functions.
 - Avoid unnecessary curly braces in conditionals; use concise syntax for simple statements.
 - Use declarative JSX.
 - Use Prettier for consistent code formatting.
 
+# Styling & UI
 - Use Expo's built-in components for common UI patterns and layouts.
 - Implement responsive design with Flexbox and useWindowDimensions.
 - Use styled-components or Tailwind CSS for styling.
@@ -24,14 +29,16 @@
 - Ensure high accessibility (a11y) standards using ARIA roles and native accessibility props.
 - Use react-native-reanimated and react-native-gesture-handler for performant animations and gestures.
 
+# Testing
 - Use jest-expo as the testing framework.
 - Use React Native Testing Library for component testing.
 - Use React Native Jest Snapshot Testing for component snapshots.
 - Use React Native Jest DOM for DOM testing.
 - Use AAA testing structure for tests.
-- Write tests for all components and utilities.
+- Write unit tests for all components and utilities.
 
-- Reference docs/ before implementing features.
-- Use docs/implementaion-plan.txt for implementation plan.
+# Documentation
+- Review docs/feature before implementing a feature.
+- Review docs/pm for requirements and implementation plan.
+- Generate documentation for new feature in docs/feature/{feature_name}/.
 - Mark implementation plan items as completed only after I accept feature is complete.
-- Use docs/functional-requirements.txt for functional requirements.s
